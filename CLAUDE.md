@@ -6,6 +6,7 @@ Goal: zyada views, zyada watch time, aur YPP earning.
 
 Style ka master reference: `reference/nuclear-winter-reference.md` (pura script + beat-by-beat breakdown).
 Naya script likhne se pehle wo file aur `templates/script-template.md` padho. Topic list: `TOPICS.md`.
+Video production pipeline: `PRODUCTION.md`. Free 3D globe/map scenes (three.js → ffmpeg): `animation/README.md`.
 
 ## Style DNA (har script mein ye hona chahiye)
 
