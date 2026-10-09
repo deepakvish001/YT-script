@@ -55,6 +55,15 @@ Har bade number ko kisi jaani-pehchaani cheez se compare karo.
   YouTube ki "inauthentic / reused content" policy se monetization jaa sakta hai.
 - Video 15+ min rakho taaki mid-roll ads lag sakein; mid-rolls cliffhanger lines ke turant baad lagao.
 
+## AI / Tech reels (Oct 2026 se channel ki main disha)
+- Topic: AI aur technology — tools, models kaise bante hain, AI ka itihaas, GenAI terms (LLM, token...), future, India ka role.
+- Har baat **simple Hindi** mein, ek reel = ek seekh. Technical shabd English mein, turant "यानी ..." se samjhao, desi analogy ke saath.
+- **Sahi / galat / normal:** myth reels mein sach saaf-saaf bolo; hype aur doom dono se bacho.
+- **India ko honestly promote karo:** asli kamyabi + kya abhi baaki hai. "Duniya mein pehla / sabse bada" tabhi bolo jab source pakka ho.
+- Fast-moving facts par date lagao ("Oct 2026 tak"). Latest model/tool ke naam har baar web se verify karo.
+- Format: 9:16, 30–60 sec. Visual mix: 2D line-art (`animation/scenes/explainer-khaad.html` style) + 3D data/globe + 0–2 AI clips per reel (Higgsfield ~7.5 credits/clip). Asli logon ke realistic chehre / deepfake kabhi nahi.
+- Reel ideas aur series plan: `ai-channel/REEL-IDEAS.md`.
+
 ## Workflow
 - Naye scripts `scripts/NN-topic-slug.md` mein. Har script ke saath: 3 title options, thumbnail idea,
   chapter timestamps ka draft, aur `## Sources`.
