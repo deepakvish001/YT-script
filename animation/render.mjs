@@ -3,6 +3,7 @@
 //
 //   node render.mjs scenes/hormuz.html out/hormuz.mp4 12          # full render (30 fps)
 //   STILLS=0.5,4,7.5,10.5 node render.mjs scenes/hormuz.html       # preview stills only
+//   SIZE=1080x1920 node render.mjs scenes/explainer-khaad.html out/khaad.mp4 12   # vertical
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,6 +15,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const [scenePath = 'scenes/hormuz.html', outPath = 'out/scene.mp4', durArg = '12', fpsArg = '30'] = process.argv.slice(2);
 const fps = Number(fpsArg), duration = Number(durArg);
 const CHROME = process.env.CHROME || '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const [W, H] = (process.env.SIZE || '1920x1080').split('x').map(Number); // SIZE=1080x1920 for vertical Shorts
 
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.woff2': 'font/woff2', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg' };
 const server = http.createServer((req, res) => {
@@ -28,7 +30,7 @@ const browser = await chromium.launch({
   executablePath: CHROME,
   args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'],
 });
-const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+const page = await browser.newPage({ viewport: { width: W, height: H } });
 page.on('console', m => console.log('[page]', m.text()));
 page.on('pageerror', e => console.error('[pageerror]', e.message));
 await page.goto(`http://127.0.0.1:${server.address().port}/${scenePath}`);
