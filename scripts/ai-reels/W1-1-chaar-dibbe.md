@@ -1,46 +1,63 @@
-# Reel W1-1 · AI का ABC — 4 डिब्बे (channel की पहली reel)
+# रील 1 — एआई का एबीसी: 4 डिब्बे
 
-**Publish:** Somvaar 12 Oct 2026, shaam 7–9 (IST) · **Series:** AI का ABC · **Length:** ~55 sec · **AI clips:** 0 (0 credits)
-**Ek seekh:** AI ⊃ Machine Learning ⊃ Deep Learning ⊃ आज का GenAI — एक के अंदर एक रखे टिफ़िन के डिब्बे।
+**कब:** सोमवार 12 अक्टूबर 2026 · शाम 7–9 बजे · **सीरीज़:** एआई का एबीसी (चैनल की पहली रील)
+**लंबाई:** करीब 55 सेकंड · **एआई क्लिप:** 0 (0 क्रेडिट) · **एक सीख:** एआई ⊃ मशीन लर्निंग ⊃ डीप लर्निंग ⊃ आज का जेन-एआई — एक के अंदर एक रखे टिफ़िन के डिब्बे।
 
-## Title / cover
-- **Shorts title options:** (1) AI, ML, Deep Learning, GenAI — असली फ़र्क 4 डिब्बों में (2) हर AI, ChatGPT नहीं होता! (3) AI का ABC #1: ये 4 डिब्बे समझ लो
-- **Cover text (2 lines):** "AI ≠ ChatGPT" / "4 डिब्बे समझो"
+---
 
-## Script (voiceover + screen)
+## स्क्रिप्ट
 
-| Time | Voiceover (बोलना है) | Screen (2D/3D) |
-|---|---|---|
-| 0–3s | **ChatGPT AI है... लेकिन हर AI, ChatGPT नहीं होता। ये 4 डिब्बे समझ लो।** | 4 nested टिफ़िन डिब्बे orange outline में pop-in। Corner sting: "AI का ABC · #1" |
-| 3–11s | सबसे बड़ा डिब्बा — **AI**। यानी मशीन से समझदारी वाला काम करवाना। ये शब्द 1955 के एक proposal में आया था। | सबसे बड़े डिब्बे पर label "AI", stamp "1955" pop. Rule-book वाला robot icon |
-| 11–22s | उसके अंदर — **Machine Learning**। यानी rules रटाने की जगह examples से सीखना। तुम्हारे UPI में fraud पकड़ने के लिए भी NPCI बैंकों को AI/ML वाले models देता है। | दूसरा डिब्बा खुलता है, label "ML". 3 example cards → pattern. फिर generic phone (कोई UPI/bank logo नहीं) पर "risk score" meter. छोटा tag: "लोकसभा जवाब, Dec 2025" |
-| 22–33s | उसके अंदर — **Deep Learning**। यानी कई परतों वाला neural network। 2012 में AlexNet नाम के model की गलती करीब 15% थी — जबकि दूसरे नंबर वाली team की करीब 26%। | तीसरा डिब्बा, label "Deep Learning". 4 परतों का network line-draw. Bars: "दूसरे नंबर 26.2%" vs "AlexNet 15.3%" (tag "ImageNet 2012, top-5 error") |
-| 33–45s | और सबसे अंदर — **आज का GenAI**। यानी ऐसा AI जो कुछ नया बनाता है: text, photo, आवाज़। 30 नवंबर 2022 को ChatGPT आया। और फ़रवरी 2026 में OpenAI के CEO ने कहा — भारत में हर हफ़्ते करीब 10 करोड़ लोग इसे इस्तेमाल करते हैं। | सबसे छोटा डिब्बा glow, label "GenAI". Chat bubble + photo + waveform icons. Counter "~10 करोड़ / हफ़्ता" + tag **"Feb 2026 · OpenAI CEO के मुताबिक"** |
-| 45–55s | तो हर GenAI, AI है... पर हर AI, GenAI नहीं। और **AGI**? उस डिब्बे का साइज़ अभी कोई तय नहीं कर पाया। Save कर लो — और अगली बार कोई "AI" बोले, तो पूछना: **कौन सा डिब्बा?** | चारों डिब्बे एक साथ, फिर बाहर dotted "AGI?" डिब्बा wobble. Checkbox "Saved ✓". End card: "Follow · AI का ABC" |
+**⏱ 0–3 सेकंड · हुक**
+🎙️ **बोलो:** चैटजीपीटी एआई है... लेकिन हर एआई, चैटजीपीटी नहीं होता। ये 4 डिब्बे समझ लो।
+🎬 **स्क्रीन:** 4 टिफ़िन डिब्बे, एक के अंदर एक, नारंगी लाइन में पॉप होते हैं। कोने में: "एआई का एबीसी · #1"
 
-**Words:** ~140 · Recording speed normal; हर डिब्बे के नाम पर हल्का ज़ोर।
+**⏱ 3–11 सेकंड · पहला डिब्बा**
+🎙️ **बोलो:** सबसे बड़ा डिब्बा — **एआई**। यानी मशीन से समझदारी वाला काम करवाना। ये शब्द 1955 के एक प्रपोज़ल में आया था।
+🎬 **स्क्रीन:** सबसे बड़े डिब्बे पर लेबल "एआई" और ठप्पा "1955"। किताब पकड़े रोबोट का आइकन।
 
-## Caption (post के नीचे)
-> हर AI, ChatGPT नहीं होता 🤯 AI → ML → Deep Learning → GenAI: 4 डिब्बे, एक के अंदर एक। तुम किस डिब्बे के बारे में ज़्यादा जानना चाहते हो? Comment करो 👇
-> Sources pinned comment में। कुछ visuals animation हैं, कोई AI वीडियो नहीं।
+**⏱ 11–22 सेकंड · दूसरा डिब्बा**
+🎙️ **बोलो:** उसके अंदर — **मशीन लर्निंग**। यानी रूल्स रटाने की जगह उदाहरणों से सीखना। तुम्हारे यूपीआई में फ़्रॉड पकड़ने के लिए भी एनपीसीआई सभी बैंकों को एआई-एमएल से चलने वाला फ़्रॉड-मॉनिटरिंग सिस्टम देता है।
+🎬 **स्क्रीन:** दूसरा डिब्बा खुलता है, लेबल "मशीन लर्निंग"। 3 उदाहरण कार्ड मिलकर एक पैटर्न बनाते हैं। फिर एक सादे फ़ोन पर "अलर्ट / डिक्लाइन" का निशान — **कोई यूपीआई या बैंक का लोगो नहीं।** छोटा टैग: "लोकसभा जवाब, दिसंबर 2025"
+
+**⏱ 22–33 सेकंड · तीसरा डिब्बा**
+🎙️ **बोलो:** उसके अंदर — **डीप लर्निंग**। यानी कई परतों वाला न्यूरल नेटवर्क। 2012 की इमेजनेट कॉम्पिटिशन में एलेक्सनेट की गलती करीब 15% थी — जबकि दूसरे नंबर वाली टीम की करीब 26%।
+🎬 **स्क्रीन:** तीसरा डिब्बा, लेबल "डीप लर्निंग"। 4 परतों का नेटवर्क लाइन से बनता है। दो बार: "दूसरे नंबर 26.2%" और "एलेक्सनेट 15.3%" — टैग "इमेजनेट 2012"
+
+**⏱ 33–45 सेकंड · चौथा डिब्बा**
+🎙️ **बोलो:** और सबसे अंदर — **आज का जेन-एआई**। यानी ऐसा एआई जो कुछ नया बनाता है: टेक्स्ट, फ़ोटो, आवाज़। 30 नवंबर 2022 को चैटजीपीटी आया। और फ़रवरी 2026 में ओपनएआई के सीईओ ने कहा — भारत में हर हफ़्ते करीब 10 करोड़ यूज़र्स इसे इस्तेमाल करते हैं।
+🎬 **स्क्रीन:** सबसे छोटा डिब्बा चमकता है, लेबल "जेन-एआई"। चैट बबल, फ़ोटो और आवाज़ की लहर के आइकन। काउंटर "करीब 10 करोड़ / हफ़्ता" और टैग **"फ़रवरी 2026 · ओपनएआई सीईओ के मुताबिक"**
+
+**⏱ 45–55 सेकंड · नतीजा + सीटीए**
+🎙️ **बोलो:** तो हर जेन-एआई, एआई है... पर हर एआई, जेन-एआई नहीं। और **एजीआई**? उस डिब्बे का साइज़ अभी कोई तय नहीं कर पाया। सेव कर लो — और अगली बार कोई "एआई" बोले, तो पूछना: **कौन सा डिब्बा?**
+🎬 **स्क्रीन:** चारों डिब्बे एक साथ। **सबसे बड़े एआई डिब्बे के अंदर** एक बिंदुदार "एजीआई?" आउटलाइन हिलती रहती है, किनारे धुंधले (साइज़ तय नहीं)। "सेव ✓" टिक होता है। आख़िरी कार्ड: "फ़ॉलो करो · एआई का एबीसी"
+
+---
+
+## टाइटल और कवर
+- **टाइटल (कोई एक):** (1) एआई, एमएल, डीप लर्निंग, जेन-एआई — असली फ़र्क 4 डिब्बों में (2) हर एआई, चैटजीपीटी नहीं होता! (3) एआई का एबीसी #1: ये 4 डिब्बे समझ लो
+- **कवर पर लिखो:** "एआई ≠ चैटजीपीटी" / "4 डिब्बे समझो"
+
+## कैप्शन
+> हर एआई, चैटजीपीटी नहीं होता 🤯 एआई → मशीन लर्निंग → डीप लर्निंग → जेन-एआई: 4 डिब्बे, एक के अंदर एक। तुम किस डिब्बे के बारे में और जानना चाहते हो? कमेंट करो 👇
+> सोर्स पिन किए कमेंट में। इस रील के सारे विज़ुअल एनिमेशन हैं, कोई एआई वीडियो नहीं।
 > #AIkaABC #AIHindi #GenAI #MachineLearning #ChatGPT #TechHindi
 
-**Pinned comment (sources):** 1955 Dartmouth proposal (AI Magazine) · Samuel 1959 · AlexNet paper 2012 · Lok Sabha Unstarred Q 2481 (15 Dec 2025) · TechCrunch 15 Feb 2026 (OpenAI CEO का आंकड़ा)
+**पिन किया कमेंट (सोर्स):** डार्टमाउथ प्रपोज़ल, 31 अगस्त 1955 (AI Magazine) · एलेक्सनेट पेपर 2012 · लोकसभा जवाब, 15 दिसंबर 2025 (IANS रिपोर्ट) · ओपनएआई ब्लॉग, 30 नवंबर 2022 (चैटजीपीटी लॉन्च) · सैम ऑल्टमैन, टाइम्स ऑफ़ इंडिया लेख, 15 फ़रवरी 2026
 
-## Dhyan rakho (galti mat karna)
-- "McCarthy ने 1956 में शब्द बनाया" मत बोलो — proposal **1955** का है (workshop 1956 में हुआ)।
-- Samuel की "learn without being explicitly programmed" वाली line **मत** डालो — वो उनके 1959 paper में नहीं है।
-- 26% AlexNet का पुराना score नहीं, **उसी साल दूसरे नंबर वाली team** का था।
-- 10 करोड़: हमेशा "फ़रवरी 2026, OpenAI CEO के मुताबिक" — "आज" कभी नहीं। ये company का अपना आंकड़ा है।
-- UPI/NPCI/bank का असली logo नहीं।
+## ध्यान रखो
+- "1956 में शब्द बना" मत बोलो — प्रपोज़ल **1955** का है, बैठक 1956 में हुई।
+- 26% एलेक्सनेट का पुराना स्कोर नहीं, **उसी साल दूसरे नंबर वाली टीम** का था।
+- 10 करोड़ "यूज़र्स" बोलो, "लोग" नहीं — और हमेशा "फ़रवरी 2026, ओपनएआई सीईओ के मुताबिक"। "आज" कभी नहीं।
+- एजीआई वाला डिब्बा **एआई के बड़े डिब्बे के अंदर** दिखाओ, बाहर नहीं (एजीआई भी एआई का ही एक लक्ष्य है)।
+- यूपीआई, एनपीसीआई, बैंक या चैटजीपीटी का असली लोगो नहीं।
 
-## Sources
-- 'Artificial intelligence' शब्द — 31 Aug 1955 Dartmouth proposal: [AI Magazine reprint](https://ojs.aaai.org/index.php/aimagazine/article/view/1904)
-- Samuel 1959 checkers paper: [PDF](https://people.csail.mit.edu/brooks/idocs/Samuel.pdf)
-- AlexNet top-5 error 15.3% vs runner-up 26.2%: [AlexNet paper](https://cvml.ista.ac.at/courses/DLWT_W17/material/AlexNet.pdf)
-- NPCI बैंकों को AI/ML-based fraud monitoring देता है: [Lok Sabha Unstarred Q 2481, 15 Dec 2025](https://eparlib.sansad.in/bitstream/123456789/3018042/1/AU2481_5bIzKk.pdf)
-- ChatGPT launch 30 Nov 2022: [OpenFuture](https://openfuture.eu/note/open-ai-releases-chatgpt/)
-- भारत में ~100M weekly ChatGPT users (Altman, Feb 2026): [TechCrunch, 15 Feb 2026](https://www.techcrunch.com/2026/02/15/india-has-100m-weekly-active-chatgpt-users-sam-altman-says/)
+## सोर्स
+- 'Artificial intelligence' शब्द, 31 Aug 1955 Dartmouth proposal: [AI Magazine reprint](https://ojs.aaai.org/index.php/aimagazine/article/view/1904)
+- AlexNet, ILSVRC-2012 top-5 error 15.3% vs runner-up 26.2%: [AlexNet paper](https://cvml.ista.ac.at/courses/DLWT_W17/material/AlexNet.pdf)
+- NPCI सभी बैंकों को AI/ML-based fraud monitoring solution देता है (Lok Sabha, 15 Dec 2025): [IANS](https://ianslive.in/upi-frauds-worth-rs-805-crore-witnessed-this-fiscal-so-far-minister--20251215175703) · [Lok Sabha Q 2481 PDF](https://eparlib.sansad.in/bitstream/123456789/3018042/1/AU2481_5bIzKk.pdf)
+- ChatGPT launch 30 Nov 2022: [OpenAI — Introducing ChatGPT](https://openai.com/index/chatgpt/)
+- India ~100M weekly active ChatGPT users (Altman, 15 Feb 2026): [TechCrunch](https://www.techcrunch.com/2026/02/15/india-has-100m-weekly-active-chatgpt-users-sam-altman-says/) · [Storyboard18](https://storyboard18.com/digital/india-now-has-100-million-weekly-chatgpt-users-says-sam-altman-89705.htm)
 
-## Publish-day check
-- [ ] India ChatGPT users का कोई नया official आंकड़ा आया? आया हो तो नया number + तारीख।
+## पब्लिश वाले दिन चेक करो
+- [ ] भारत के चैटजीपीटी यूज़र्स का कोई नया ऑफ़िशियल आंकड़ा आया? आया हो तो नया नंबर और तारीख।
+- [ ] लोकसभा Q 2481 का PDF एक बार खोलकर देखो कि एनपीसीआई वाली लाइन उसी में है।

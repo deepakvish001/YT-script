@@ -1,43 +1,64 @@
-# Reel W1-2 · AI गलत जवाब भी कॉन्फिडेंस से क्यों देता है?
+# रील 2 — एआई गलत जवाब भी पूरे यकीन से क्यों देता है?
 
-**Publish:** Budhvaar 14 Oct 2026, shaam 7–9 (IST) · **Series:** सही / गलत / नॉर्मल · **Length:** ~60 sec · **AI clips:** 0 (0 credits)
-**Ek seekh:** Hallucination की एक बड़ी वजह — AI के ज़्यादातर tests तुक्के को सज़ा नहीं देते। इसलिए AI का जवाब draft है, फ़ैसला नहीं।
+**कब:** बुधवार 14 अक्टूबर 2026 · शाम 7–9 बजे · **सीरीज़:** सही / गलत / नॉर्मल
+**लंबाई:** करीब 62–65 सेकंड · **एआई क्लिप:** 0 (0 क्रेडिट) · **एक सीख:** हैलुसिनेशन की एक बड़ी वजह — एआई के ज़्यादातर टेस्ट तुक्के को सज़ा नहीं देते। इसलिए एआई का जवाब ड्राफ़्ट है, फ़ैसला नहीं।
 
-## Title / cover
-- **Shorts title options:** (1) AI गलत जवाब भी कॉन्फिडेंस से क्यों देता है? (2) AI के exam में negative marking नहीं है! (3) OpenAI के paper में JEE-NEET का नाम क्यों आया?
-- **Cover text:** "AI 100% sure... पर गलत?" / "असली वजह"
+---
 
-## Script (voiceover + screen)
+## स्क्रिप्ट
 
-| Time | Voiceover (बोलना है) | Screen (2D/3D) |
-|---|---|---|
-| 0–4s | **AI गलत जवाब भी पूरे कॉन्फिडेंस से क्यों देता है? एक बड़ी वजह — उसके ज़्यादातर exams में negative marking ही नहीं है।** | Chat bubble में जवाब पर orange stamp "100% SURE", फिर लाल cross draw. Corner sting: "सही / गलत / नॉर्मल" |
-| 4–15s | सितंबर 2025 के एक research paper में, एक बड़े open-source AI से paper के ही एक लेखक का birthday पूछा गया — कहा, पता हो तभी बताना। तीन बार पूछा... तीन अलग-अलग गलत तारीखें। | `calendar-flip` के 3 cards: 03-07, 15-06, 01-01 — हर एक पर लाल cross. Tag: "OpenAI + Georgia Tech, Sep 2025" |
-| 15–28s | याद करो वो MCQ test जिसमें negative marking नहीं थी। छोड़ा तो zero, तुक्का लगाया तो शायद नंबर। AI के ज़्यादातर tests भी ऐसे ही नंबर देते हैं — तो तुक्का फ़ायदे का सौदा बन जाता है। इसी को कहते हैं **hallucination** — यानी ऐसा जवाब जो सुनने में सही लगे, पर हो गलत। | OMR sheet line-art. Table: "सही = 1 · गलत = 0 · पता नहीं = 0". Bot तुक्के वाला bubble भरता है |
-| 28–38s | और मज़ेदार बात — इस paper ने negative marking वाले exams की मिसाल में भारत के **JEE, NEET और GATE** का नाम लिया है। सुझाव: AI के tests में भी गलत जवाब पर नंबर कटें। | Table पलटती है: "गलत = −1". Bot अब "पता नहीं" bubble करता है. Source card: paper की असली line का screenshot (Sec 4.2) |
-| 38–49s | और ये सिर्फ़ theory नहीं। फ़रवरी 2026 में Supreme Court ने एक trial court के order पर खुद संज्ञान लिया — जो AI से बने चार नकली judgments पर टिका था। | Gavel line-art + 4 judgment cards, हर एक पर "NOT FOUND" stamp. Tag: "SC, 27 Feb 2026" |
-| 49–60s | तो health, पैसा, कानून, exam की तारीख — **AI का जवाब draft है, फ़ैसला नहीं।** Source माँगो, official site से मिलाओ। ये reel उस दोस्त को भेजो जो AI का हर जवाब सच मानता है। | Checklist tick: "Source माँगो ✓ · Official site ✓". End card: "Follow · सही/गलत/नॉर्मल" |
+**⏱ 0–4 सेकंड · हुक**
+🎙️ **बोलो:** एआई गलत जवाब भी पूरे यकीन से क्यों देता है? एक बड़ी वजह — उसके ज़्यादातर एग्ज़ाम में **नेगेटिव मार्किंग ही नहीं है।**
+🎬 **स्क्रीन:** चैट बबल के जवाब पर नारंगी ठप्पा "पक्का जवाब", फिर उस पर लाल क्रॉस। कोने में: "सही / गलत / नॉर्मल"
 
-**Words:** ~150 · "तीन बार पूछा... तीन अलग-अलग" पर ठहराव।
+**⏱ 4–14 सेकंड · असली उदाहरण**
+🎙️ **बोलो:** 2025 के एक रिसर्च पेपर में, एक बड़े एआई से पेपर के ही एक लेखक का बर्थडे पूछा गया — पता हो, तभी बताना। तीन बार पूछा... **तीन अलग-अलग गलत तारीखें।**
+🎬 **स्क्रीन:** 3 कैलेंडर कार्ड पलटते हैं: 03-07, 15-06, 01-01 — हर एक पर लाल क्रॉस। टैग: "ओपनएआई + जॉर्जिया टेक, सितंबर 2025"
 
-## Caption
-> AI "100% sure" बोलकर भी गलत क्यों होता है? 🤔 OpenAI के एक paper ने इसकी एक बड़ी वजह बताई — और मिसाल दी हमारे JEE-NEET-GATE की negative marking की! 📝
-> AI का जवाब draft है, फ़ैसला नहीं। Sources pinned comment में।
-> #AIHindi #Hallucination #ChatGPT #SahiGalat #TechHindi #JEE
+**⏱ 14–27 सेकंड · वजह + शब्द**
+🎙️ **बोलो:** याद करो बिना नेगेटिव मार्किंग वाला एमसीक्यू टेस्ट — छोड़ा तो ज़ीरो, तुक्का लगाया तो शायद नंबर। एआई के ज़्यादातर टेस्ट भी ऐसे ही हैं, तो तुक्का फ़ायदे का सौदा बन जाता है। और ऐसा जवाब — जो सुनने में सही लगे, पर हो गलत — उसे कहते हैं **हैलुसिनेशन।**
+🎬 **स्क्रीन:** ओएमआर शीट की लाइन-आर्ट। टेबल: "सही = 1 · गलत = 0 · पता नहीं = 0"। बॉट तुक्के वाला गोला भरता है।
 
-**Pinned comment (sources):** "Why Language Models Hallucinate" — OpenAI + Georgia Tech, Sep 2025 · Supreme Court suo motu, 27 Feb 2026 (DTNext report)
+**⏱ 27–37 सेकंड · भारत कनेक्शन**
+🎙️ **बोलो:** मज़ेदार बात — इस पेपर ने नेगेटिव मार्किंग की मिसाल में भारत के **जेईई, नीट और गेट** का नाम भी लिया है। सुझाव: एआई के टेस्ट में भी गलत जवाब पर नंबर कटें — और ये नियम पहले से बताया जाए।
+🎬 **स्क्रीन:** टेबल पलटती है: "गलत = −1 (उदाहरण)"। अब बॉट "पता नहीं" वाला गोला भरता है। सोर्स कार्ड: पेपर की असली लाइन का स्क्रीनशॉट, नीचे "arXiv:2509.04664 · CC BY 4.0"
 
-## Dhyan rakho
-- "**एक बड़ी** वजह" बोलो, "वजह है" नहीं — paper दो वजहें देता है (pretraining के statistics + 0/1 grading)।
-- Hook में "झूठ" मत बोलो — "गलत जवाब" / "तुक्का"।
-- AI model का नाम मत लो; judge का नाम या court footage नहीं।
-- JEE/NEET/GATE की exact marking scheme मत बताओ। "Negative marking से hallucination ख़त्म हो जाएगा" मत बोलो — ये सिर्फ़ एक सुझाव है।
-- **Recording से पहले:** paper का PDF normal browser में खोलकर Sec 4.2 की "Indian JEE, NEET, and GATE" वाली line का screenshot लो (source card के लिए)।
+**⏱ 37–49 सेकंड · असली नुकसान**
+🎙️ **बोलो:** और नुकसान असली है। फ़रवरी 2026 में सुप्रीम कोर्ट के सामने आया कि एक ट्रायल कोर्ट ने एआई से गढ़े ऐसे चार जजमेंट्स का हवाला दिया था, जो कभी बने ही नहीं। कोर्ट ने इसे **मिसकंडक्ट** कहा।
+🎬 **स्क्रीन:** तराज़ू की लाइन-आर्ट और फ़ाइलों का ढेर (हथौड़ा नहीं, कोई सरकारी चिह्न या लोगो नहीं)। 4 कार्ड "जजमेंट #1 … #4" — हर एक पर "NOT FOUND" ठप्पा। टैग: "सुप्रीम कोर्ट, 27 फ़रवरी 2026"
 
-## Sources
-- Hallucination की वजहें, birthday example (03-07 / 15-06 / 01-01), Sec 4.2 में "Indian JEE, NEET, and GATE": [Why Language Models Hallucinate — HF Papers 2509.04664](https://huggingface.co/papers/2509.04664) · [OpenAI blog, Sep 2025](https://openai.com/index/why-language-models-hallucinate/)
-- Supreme Court ने 27 Feb 2026 को suo motu संज्ञान लिया; trial-court order 4 non-existent judgments पर टिका था: [DTNext, Mar 2026](https://www.dtnext.in/news/national/sc-takes-cognisance-of-trial-court-relying-on-ai-generated-fake-verdicts)
+**⏱ 49–62 सेकंड · नियम + सीटीए**
+🎙️ **बोलो:** तो हेल्थ, पैसा, कानून, एग्ज़ाम — **एआई का जवाब ड्राफ़्ट है, फ़ैसला नहीं।** सोर्स माँगो, और उसे खुद खोलकर ऑफ़िशियल साइट से मिलाओ — क्योंकि एआई सोर्स भी गढ़ सकता है। ये रील उस दोस्त को भेजो जो एआई की हर बात सच मानता है।
+🎬 **स्क्रीन:** चेकलिस्ट टिक होती है: "सोर्स माँगो ✓ · खुद खोलकर देखो ✓ · ऑफ़िशियल साइट ✓"। आख़िरी कार्ड: "फ़ॉलो करो · सही/गलत/नॉर्मल"
 
-## Publish-day check
-- [ ] Paper की Sec 4.2 वाली line screenshot में साफ़ दिख रही है।
-- [ ] SC मामले में कोई नया आदेश आया हो तो caption में जोड़ो।
+---
+
+## टाइटल और कवर
+- **टाइटल (कोई एक):** (1) एआई गलत जवाब भी पूरे यकीन से क्यों देता है? (2) एआई के एग्ज़ाम में नेगेटिव मार्किंग नहीं है! (3) ओपनएआई के पेपर में जेईई-नीट का नाम क्यों आया?
+- **कवर पर लिखो:** "एआई पक्के से बोला... पर गलत?" / "असली वजह"
+
+## कैप्शन
+> एआई पूरे यकीन से बोलकर भी गलत क्यों होता है? 🤔 ओपनएआई और जॉर्जिया टेक के एक पेपर ने इसकी एक बड़ी वजह बताई — और नेगेटिव मार्किंग की मिसाल में हमारे जेईई-नीट-गेट का नाम भी लिया! 📝
+> अपडेट: 2 जुलाई 2026 को सुप्रीम कोर्ट ने एआई से बने नकली हवालों पर टिके एनसीएलटी-एनसीएलएटी के ऑर्डर रद्द किए, और बार काउंसिल से इस पर नियम बनाने को कहा।
+> एआई का जवाब ड्राफ़्ट है, फ़ैसला नहीं। सोर्स पिन किए कमेंट में।
+> #AIHindi #Hallucination #SahiGalat #TechHindi #JEE #AIसच
+
+**पिन किया कमेंट (सोर्स):** पेपर: "Why Language Models Hallucinate" — Kalai, Nachum, Vempala, Zhang (OpenAI + Georgia Tech), arXiv:2509.04664, 4 सितंबर 2025 · सुप्रीम कोर्ट: SLP(C) No. 7575/2026, ऑर्डर 27 फ़रवरी 2026 · अपडेट: 2026 INSC 668 (2 जुलाई 2026)
+
+## ध्यान रखो
+- "**एक बड़ी** वजह" बोलो, "वजह यही है" नहीं — पेपर दो वजहें देता है (प्री-ट्रेनिंग के आंकड़े + 0/1 वाली ग्रेडिंग)।
+- हैलुसिनेशन = गलत जवाब (नतीजा), तुक्का उसकी एक वजह है। दोनों को एक मत बोलो।
+- "झूठ" मत बोलो — "गलत जवाब" / "तुक्का"। किसी एआई मॉडल का नाम मत लो।
+- सुप्रीम कोर्ट केस को "सुओ मोटो / खुद संज्ञान" मत कहो — ये एक एसएलपी केस में आया था।
+- जज का नाम, कोर्ट फ़ुटेज, हथौड़ा, अशोक चिह्न या सुप्रीम कोर्ट का लोगो नहीं। जजमेंट कार्ड पर कोई असली केस का नाम नहीं।
+- "नेगेटिव मार्किंग से हैलुसिनेशन ख़त्म हो जाएगा" मत बोलो — ये सिर्फ़ एक सुझाव है। −1 को "उदाहरण" लिखो।
+- **रिकॉर्डिंग से पहले:** पेपर का PDF ब्राउज़र में खोलकर सेक्शन 4.2 की "Indian JEE, NEET, and GATE" वाली लाइन का स्क्रीनशॉट लो।
+
+## सोर्स
+- Hallucination की परिभाषा और वजहें, birthday example, Sec 4.2 में "Indian JEE, NEET, and GATE", penalty proposal: [arXiv 2509.04664](https://arxiv.org/html/2509.04664v1) · [HF Papers](https://huggingface.co/papers/2509.04664) · [OpenAI blog, Sep 2025](https://openai.com/index/why-language-models-hallucinate/)
+- SC ने 27 Feb 2026 को SLP(C) 7575/2026 में AI-generated fake judgments पर cognisance लिया, "misconduct" कहा: [Verdictum](https://www.verdictum.in/court-updates/supreme-court/cognizance-using-fake-ai-generated-precedents-trial-court-judgments-1609159) · [DTNext, Mar 2026](https://www.dtnext.in/news/national/sc-takes-cognisance-of-trial-court-relying-on-ai-generated-fake-verdicts)
+- 2 Jul 2026: SC ने AI-hallucinated citations वाले NCLT/NCLAT orders रद्द किए, BCI से guidelines: [Bar & Bench](https://www.barandbench.com/news/litigation/supreme-court-sets-aside-nclt-judgment-for-relying-on-hallucinated-ai-generated-citations) · [LiveLaw](https://www.livelaw.in/amp/supreme-court/supreme-court-sets-aside-nclt-judgment-for-using-ai-hallucinated-citations-asks-bci-to-examine-issue-539616)
+
+## पब्लिश वाले दिन चेक करो
+- [ ] पेपर की सेक्शन 4.2 वाली लाइन स्क्रीनशॉट में साफ़ दिख रही है।
+- [ ] सुप्रीम कोर्ट में इस मुद्दे पर कोई नया आदेश आया हो तो कैप्शन में जोड़ो।
