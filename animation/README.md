@@ -23,4 +23,4 @@ ffmpeg -i out/hormuz-silent.mp4 -i out/hormuz-sfx.wav -c:v copy -c:a aac -b:a 19
 | `scenes/hormuz.html` | Globe → Hormuz zoom (33 KM) → India/China/Japan/Korea tanker routes → routes laal ("बंद") | 12 s |
 | `scenes/explainer-khaad.html` | 2D line-art explainer (cream + orange): क़तर गैस → यूरिया → गेहूँ → रोटी chain, सप्लाई बंद होने पर chain टूटती है. Vertical: `SIZE=1080x1920` | 12 s |
 
-Map data: Natural Earth 1:50m via `world-atlas`. Hormuz ke top-4 destinations aur ~20% figure: EIA (2024).
+Map data: Natural Earth 1:50m via `world-atlas` — **sirf coastlines**. Iske political borders India ki official boundary se match nahi karte, isliye borders/India highlight nahi banate. Hormuz ke top-4 destinations aur ~20% figure: EIA (2024).

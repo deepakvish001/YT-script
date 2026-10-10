@@ -104,11 +104,11 @@ function fillPolygon(rings, color) {
     g.fillStyle = color; g.fill('evenodd');
   }
 }
-const INDIA = '356';
+// Land only, no per-country fill: Natural Earth polygons follow de facto control and do not match
+// India's official (Survey of India) boundary, so no country is singled out or outlined here.
 for (const f of countries.features) {
   const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates;
-  const color = f.id === INDIA ? '#3a3122' : '#1b2b3d';
-  for (const p of polys) fillPolygon(p, color);
+  for (const p of polys) fillPolygon(p, '#1b2b3d');
 }
 const tex = new THREE.CanvasTexture(cv);
 tex.colorSpace = THREE.SRGBColorSpace;
@@ -120,7 +120,7 @@ const globe = new THREE.Mesh(
 );
 scene.add(globe);
 
-// Crisp vector coastlines and borders on top of the texture.
+// Crisp vector coastlines on top of the texture (no political borders, see note above).
 function meshLines(filter, r) {
   const ml = topojson.mesh(topo, topo.objects.countries, filter);
   const pos = [];
@@ -135,8 +135,6 @@ function meshLines(filter, r) {
 }
 scene.add(new THREE.LineSegments(meshLines((a, b) => a === b, 1.0008),
   new THREE.LineBasicMaterial({ color: 0x5b95c2, transparent: true, opacity: .85 })));
-scene.add(new THREE.LineSegments(meshLines((a, b) => a !== b, 1.0007),
-  new THREE.LineBasicMaterial({ color: 0x35587a, transparent: true, opacity: .55 })));
 
 // Lights ride with the camera so the visible face is always lit from upper-left.
 scene.add(new THREE.AmbientLight(0xffffff, 1.1));
