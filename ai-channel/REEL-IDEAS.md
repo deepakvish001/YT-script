@@ -529,13 +529,13 @@ Har idea ke facts is run mein khud verify kiye gaye. Jahan sirf secondary source
 - **Linking:** Hafta 2 ki Sarvam reel ke baad Hafta 4 ka GPU report card aur Hafta 5 ka open-weights reel aata hai, wahan "Sarvam wali reel dekhi?" bol sakte ho. Hafta 2 ki tokens reel ka sequel Hafta 4 ki "Hindi ~0.2%" reel hai. Top #8 freshers reel ki taraf ishara karta hai, par teaser rule ke hisaab se.
 - **Teaser rule:** "अगली reel में…" tabhi bolo jab wo reel ban chuki ho aur uski date pakki ho. Warna sirf "Follow करो" bolo. Isliye kai verified scripts ke teaser CTAs badalne padenge.
 - **Production rhythm:** Hafta 3 se script aur fact-check ek hafta pehle. AI clips us hafte ki saari reels ke liye ek saath generate karo. Publish wale din "re-check" list (Sec 7, rule 8) chalao.
-- **Hormuz scene:** `hormuz.html` aur rendered `hormuz.mp4` mein India default (galat) polygon se highlight hai. Publish nahi hua to India-POV / Survey of India-matched data se re-render karo; ho chuka hai to frames check karke replace karne par socho (Sec 7, rule 6).
+- **Hormuz scene:** Theek ho gaya (10 Oct 2026). `hormuz.html` ab sirf coastlines banata hai, koi country border ya India highlight nahi, aur `demo/hormuz-3d-demo.mp4` dobara render ho chuka hai. Aage koi bhi map Sec 7, rule 6 ke hisaab se.
 
 ---
 
 ## 6. AI credits plan
 
-**Budget:** ~200 credits poori series ke liye. Plan ka figure "5-sec clip = 7.5 credits" hai, **par ye abhi kisi setting par confirm nahi hua.** 10 Oct 2026 ko Higgsfield ki model info (`kling3_0`, "Kling v3.0") check ki: modes `std` / `pro` / `4k` (default `std`), `sound` `on`/`off` (default `on`; "off" se credits kam lagte hain), duration 3–15s, aspect 9:16 available. Model info mein per-clip credit quote nahi dikhta.
+**Budget:** ~200 credits poori series ke liye. "5-sec clip = 7.5 credits": **9 Oct 2026 ko Higgsfield ke cost-preflight se confirm** (`kling3_0`, `mode=pro`, `sound=off`, 5s, 16:9 → 7.5 credits; `std` → 6.25). 9:16 par generate se pehle ek baar quote dobara dekh lena. 10 Oct 2026 ko Higgsfield ki model info (`kling3_0`, "Kling v3.0") check ki: modes `std` / `pro` / `4k` (default `std`), `sound` `on`/`off` (default `on`; "off" se credits kam lagte hain), duration 3–15s, aspect 9:16 available. Model info mein per-clip credit quote nahi dikhta.
 
 **Settings lock (har clip):** model Kling v3.0, `mode=pro`, `sound=off` (voiceover apna hai), `duration=5`, `aspect=9:16`. **Pehle batch se pehle** ek clip ka credit quote dekho. Quote 7.5 se zyada aaye to reserve list neeche se kaato.
 
