@@ -1,10 +1,27 @@
 # Code / Tech reels — visual style guide
 
+> **Main style (Oct 2026 se): "प्रोफ़ेसर बोर्ड"** — neeche section dekho. Reference reel (black + gold keyword) sirf inspiration hai; hamari reels uski copy nahi lagni chahiye.
+
+## प्रोफ़ेसर बोर्ड — hamara style
+**Soch:** professor board par concept *banata* hai. Har shabd/step ka "kyun" pehle aata hai, shabd baad mein. Viewer ko beech mein sochne ka mauka milta hai ("(रुको)").
+- **Background:** gehra slate `#14181D`, bahut halki graph-paper grid (4–6% opacity), halka vignette.
+- **Code:** beech mein JetBrains Mono, safed `#F2F2F2`. Naya shabd apni jagah par *khisak kar* aata hai, aur baaki shabd jagah dete hain (line "banti" hai).
+- **Professor ke nishaan:** haath se kheenche chalk-jaise stroke. Teer, ghera, underline aur tick SVG path-draw se banenge, halki ragged edge ke saath. Rang: chalk peela `#F2D16B`, naarangi `#FF8A3D`, galat ke liye laal `#FF5A52`.
+- **Likhavat:** Hindi notes **Kalam** font (Devanagari handwriting) mein, code JetBrains Mono mein, headings Mukta ExtraBold mein.
+- **Laser pointer:** chhota glow-dot, jo VO ke saath us cheez par jaata hai jiski baat ho rahi hai.
+- **Checklist rail:** baayin taraf ek list jo har step ke saath badhti hai, aur aakhir mein saare tick ek saath chamakte hain.
+- **Mini-diagrams:** simple line drawings (building = class, darwaza = method, JVM = chhota kirdar badge ke saath). Koi clipart ya stock nahi.
+- **Transitions:** duster-swipe (board saaf), "rewind" (pichhla frame wapas lana, pay-off ke liye), card slide. Hard cuts kam.
+- **Timing:** sabhi beats VO ke word-timestamps par lock. "(रुको)" par screen par halka "?" ya 3-2-1 ring.
+- **Sound:** sirf voiceover + bahut halka lo-fi bed. Chalk/marker ki halki aawaz sirf jab nishaan bane (−30 dB ke aaspaas).
+
+---
+
+## Reference reel (inspiration) — analysis
+
 Reference: user ki bheji reel (`public static void main` explainer, 78 sec, 9:16, @code.it2 style).
-Hamari saari "कोड की एक लाइन" reels isi look mein banengi, lekin thodi zyada saaf aur smooth.
 **Goal:** human-made motion design lage. AI-generated jaisa koi footage, stock look ya generic effect nahi.
 
-## Reference mein kya hai (analysis)
 - **Background:** pure black, bina kisi texture ke.
 - **Code line:** upar ~12% height par, safed bold sans (Canva-type font), centered. Active shabd **gold (#D4B35A-ish) + underline**.
 - **Center block:**
