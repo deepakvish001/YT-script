@@ -1,6 +1,6 @@
 # Code / Tech reels — visual style guide
 
-> **Main style (Oct 2026 se): "प्रोफ़ेसर बोर्ड"** — neeche section dekho. Reference reel (black + gold keyword) sirf inspiration hai; hamari reels uski copy nahi lagni chahiye.
+> **Update (15 Oct 2026):** user ko reference reel jaisa **simple word-by-word** format pasand hai. Visual = reference style (black + gold keyword + teer + chhota Hindi matlab, "Hum kya better karenge" wale sudhaar ke saath). VO = neeche "बोलने का स्टाइल"। "प्रोफ़ेसर बोर्ड" sirf ek option hai, default nahi.
 
 ## प्रोफ़ेसर बोर्ड — hamara style
 **Soch:** professor board par concept *banata* hai. Har shabd/step ka "kyun" pehle aata hai, shabd baad mein. Viewer ko beech mein sochne ka mauka milta hai ("(रुको)").
@@ -14,6 +14,19 @@
 - **Transitions:** duster-swipe (board saaf), "rewind" (pichhla frame wapas lana, pay-off ke liye), card slide. Hard cuts kam.
 - **Timing:** sabhi beats VO ke word-timestamps par lock. "(रुको)" par screen par halka "?" ya 3-2-1 ring.
 - **Sound:** sirf voiceover + bahut halka lo-fi bed. Chalk/marker ki halki aawaz sirf jab nishaan bane (−30 dB ke aaspaas).
+
+---
+
+## बोलने का स्टाइल (VO) — thriller-narrator deep-dive (user ki pasand, 15 Oct 2026)
+Reels aur long videos dono ke VO is tone mein likho. Ye ek dusre creator ke bolne ke *andaaz* se prerna hai. Unki lines, channel intro ya sign-off copy nahi karni.
+- **"आप" register.** Bolchaal ki Hinglish: common English shabd Devanagari mein (एक्चुअली, इंटरेस्टिंग, ऑलमोस्ट), code/tech terms Latin mein (public, JVM, object).
+- **Cold open:** ek present-tense scene (date/jagah, ya relatable pal jaise "कॉलेज का पहला Java lab")। Phir "सुनने में ये नॉर्मल लगता है। लेकिन यहाँ एक चीज़ ऐसी है जो नोटिस करने जैसी है —"।
+- **Sawaal + promise:** "तो सवाल ये है — …?" → "आज हम इसे डिकोड करेंगे… एंड तक ज़रूर देखना।"
+- **Reveal phrases:** "सच बताऊँ तो…", "अब इसको समझिए", "एक सेकंड सोचिए", "ध्यान से सोचिए", "फ़न फ़ैक्ट —"।
+- **Reframe:** "लेकिन आप शायद सोचेंगे कि … एक्चुअली ये X नहीं, Y है।"
+- **Beech mein comment hook:** "अगर आपको भी … तो कमेंट में लिख दीजिए '…'।"
+- **Ending:** "मार्क माय वर्ड्स — …" → "व्हाट डू यू थिंक — …? बताइए कमेंट्स में।" → follow/subscribe.
+- **Content:** user ki script ka kram aur seedhi samjhaane wali baatein jaisi hain waisi rakho. Style sirf upar se lagta hai, structure nahi badalta.
 
 ---
 
