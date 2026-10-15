@@ -12,7 +12,7 @@
 
 ये एक line हटा के देखिए, आपका Java program start ही नहीं होगा।
 ये line है public static void main, String args।
-आज हम इसे याद नहीं करेंगे, बल्कि word by word समझेंगे।
+पर ऐसा क्यों होता है? इसका जवाब इस line के हर word में छुपा है।
 इसे समझने का सबसे आसान तरीका है JVM की नज़र से देखना, क्योंकि JVM ही आपका program चलाती है।
 जब program start होता है, तो JVM आपकी class के बाहर से आती है।
 और बाहर वाला अंदर तभी आ सकता है, जब दरवाज़ा open हो।
