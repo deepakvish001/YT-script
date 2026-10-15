@@ -8,38 +8,9 @@
 
 ## 🎙️ वॉइसओवर
 
-> रिकॉर्डिंग: एक फ़ाइल `J1.wav`। हर line एक पूरा वाक्य है और अगली line से जुड़ी है — line खत्म होने पर हल्की साँस, फिर अगली। करीब 80–85 सेकंड।
+> रिकॉर्डिंग: एक फ़ाइल `J1.wav`। एक जुड़ा हुआ पैराग्राफ़ — हर वाक्य के बाद हल्की साँस। करीब 80–85 सेकंड।
 
-ये एक line हटा के देखिए, आपका Java program start ही नहीं होगा।
-ये line है public static void main, String args।
-पर ऐसा क्यों होता है? इसका जवाब इस line के हर word में छुपा है।
-इसे समझने का सबसे आसान तरीका है JVM की नज़र से देखना, क्योंकि JVM ही आपका program चलाती है।
-जब program start होता है, तो JVM आपकी class के बाहर से आती है।
-और बाहर वाला अंदर तभी आ सकता है, जब दरवाज़ा open हो।
-इसीलिए पहला word है public, यानी सबके लिए open।
-अगर ये दरवाज़ा बंद कर दिया, यानी main को private कर दिया, तो code compile तो हो जाएगा, पर JVM अंदर नहीं आ पाएगी और program चलेगा ही नहीं।
-अब JVM अंदर आ गई, लेकिन यहाँ एक नई problem है।
-Java में normally method call करने के लिए पहले object बनाना पड़ता है।
-लेकिन program start होने से पहले कोई object होता ही नहीं।
-इसीलिए अगला word है static, यानी बिना object बनाए सीधे class के नाम से call।
-अब JVM ने main को call कर दिया, तो क्या उसे बदले में कुछ चाहिए?
-नहीं, उसे बस program चलाना है।
-इसीलिए अगला word है void, यानी कुछ भी return नहीं करना।
-लेकिन JVM ने call किया, तो किस method को?
-क्योंकि class में तो बहुत सारे methods होते हैं।
-इसीलिए Java ने एक नाम fix कर दिया, और वो नाम है main।
-JVM सिर्फ़ इसी नाम को ढूंढती है, इसलिए नाम बदला या Main capital में लिखा, तो program start ही नहीं होगा।
-अब program शुरू हो गया, लेकिन अगर आप उसे चलाते वक़्त बाहर से कुछ भेजना चाहें, तो क्या करेंगे?
-उसके लिए है last part, String args।
-String[] का मतलब है String का array, और args का मतलब है arguments।
-जब आप program run करते हैं, तो बाहर से कुछ values भेज सकते हैं।
-और वो values args के through main method तक पहुँचती हैं।
-जैसे अगर आपने run करते वक़्त Hello और 10 भेजे, तो ये दोनों args के अंदर चले जाएँगे।
-और output कुछ ऐसा आएगा।
-तो अब समझ आया कि ये line हटाते ही program start क्यों नहीं होता?
-क्योंकि यही program का entry point है, यानी वो दरवाज़ा जहाँ से JVM अंदर आती है।
-दरवाज़ा नहीं, तो entry नहीं।
-तो अगर concept clear हो गया हो, तो follow कर लेना।
+ये एक line हटा के देखिए, आपका Java program start ही नहीं होगा। ये line है public static void main, String args। तो चलिए, इस line का हर word आसान भाषा में समझते हैं। इसे समझने का सबसे आसान तरीका है JVM की नज़र से देखना, क्योंकि JVM ही आपका program चलाती है। जब program start होता है, तो JVM आपकी class के बाहर से आती है। और बाहर वाला अंदर तभी आ सकता है, जब दरवाज़ा open हो। इसीलिए पहला word है public, यानी सबके लिए open। अगर ये दरवाज़ा बंद कर दिया, यानी main को private कर दिया, तो code compile तो हो जाएगा, पर JVM अंदर नहीं आ पाएगी और program चलेगा ही नहीं। अब JVM अंदर आ गई, लेकिन यहाँ एक नई problem है। Java में normally method call करने के लिए पहले object बनाना पड़ता है। लेकिन program start होने से पहले कोई object होता ही नहीं। इसीलिए अगला word है static, यानी बिना object बनाए सीधे class के नाम से call। अब JVM ने main को call कर दिया, तो क्या उसे बदले में कुछ चाहिए? नहीं, उसे बस program चलाना है। इसीलिए अगला word है void, यानी कुछ भी return नहीं करना। लेकिन JVM ने call किया, तो किस method को? क्योंकि class में तो बहुत सारे methods होते हैं। इसीलिए Java ने एक नाम fix कर दिया, और वो नाम है main। JVM सिर्फ़ इसी नाम को ढूंढती है, इसलिए नाम बदला या Main capital में लिखा, तो program start ही नहीं होगा। अब program शुरू हो गया, लेकिन अगर आप उसे चलाते वक़्त बाहर से कुछ भेजना चाहें, तो क्या करेंगे? उसके लिए है last part, String args। String[] का मतलब है String का array, और args का मतलब है arguments। जब आप program run करते हैं, तो बाहर से कुछ values भेज सकते हैं। और वो values args के through main method तक पहुँचती हैं। जैसे अगर आपने run करते वक़्त Hello और 10 भेजे, तो ये दोनों args के अंदर चले जाएँगे। और output कुछ ऐसा आएगा। तो अब समझ आया कि ये line हटाते ही program start क्यों नहीं होता? क्योंकि यही program का entry point है, यानी वो दरवाज़ा जहाँ से JVM अंदर आती है। दरवाज़ा नहीं, तो entry नहीं। तो अगर concept clear हो गया हो, तो follow कर लेना।
 
 ---
 
