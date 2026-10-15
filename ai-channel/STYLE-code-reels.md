@@ -27,6 +27,8 @@ Reels aur long videos dono ke VO is tone mein likho. Ye ek dusre creator ke boln
 - **Beech mein comment hook:** "अगर आपको भी … तो कमेंट में लिख दीजिए '…'।"
 - **Ending:** "मार्क माय वर्ड्स — …" → "व्हाट डू यू थिंक — …? बताइए कमेंट्स में।" → follow/subscribe.
 - **Content:** user ki script ka kram aur seedhi samjhaane wali baatein jaisi hain waisi rakho. Style sirf upar se lagta hai, structure nahi badalta.
+- **Shabd:** kitaabi/shuddh Hindi mat likho (रटना, खुला, नींव, वापसी, चिपकना)। User ke apne bolchaal wale shabd rakho: open, start, call, return, "याद कर लो", "बिना समझे"। English shabd Latin mein (line, program, object) — jaise user ki apni script mein.
+- **Connected feel:** har section ka aakhri sawaal hi agla section laaye ("JVM अंदर आ गई — पर अब नई problem…")। End mein ek line ka recap jo poora chain jode.
 
 ---
 

@@ -1,77 +1,84 @@
-# रील J1 (v5) — `public static void main(String[] args)` को डिकोड करते हैं
+# रील J1 (v6) — `public static void main(String[] args)` को डिकोड करते हैं
 
 **सीरीज़:** कोड की एक लाइन · **लंबाई:** करीब 1 मिनट 45 सेकंड · **फ़ॉर्मेट:** 9:16 · **एआई क्लिप:** 0
-**आधार:** v4 का कंटेंट और क्रम वही (public → static → void → main → String[] args → example → सार → Java 25)। सिर्फ़ **बोलने का स्टाइल** बदला है: थ्रिलर-नैरेटर वाली डीप-डाइव टोन ("आप", कोल्ड ओपन, "सच बताऊँ तो", "एक सेकंड सोचिए", "एक्चुअली ये X नहीं, Y है", "व्हाट डू यू थिंक")। स्टाइल के नियम: `ai-channel/STYLE-code-reels.md` → "बोलने का स्टाइल"।
+**आधार:** v4 का कंटेंट और क्रम वही; v6 में हर step अगले step से सवाल के ज़रिए जुड़ा है (JVM का सफ़र), और किताबी हिंदी हटाकर user की अपनी बोलचाल वाले शब्द (open, start, call, return, याद कर लो) (public → static → void → main → String[] args → example → सार → Java 25)। सिर्फ़ **बोलने का स्टाइल** बदला है: थ्रिलर-नैरेटर वाली डीप-डाइव टोन ("आप", कोल्ड ओपन, "सच बताऊँ तो", "एक सेकंड सोचिए", "एक्चुअली ये X नहीं, Y है", "व्हाट डू यू थिंक")। स्टाइल के नियम: `ai-channel/STYLE-code-reels.md` → "बोलने का स्टाइल"।
 **विज़ुअल:** reference reel जैसा — काला बैकग्राउंड, ऊपर पूरी line, जिस word की बात हो वो gold में, नीचे तीर और छोटा सा मतलब (हिंदी)।
 
 ---
 
 ## 🎙️ वॉइसओवर
 
-> रिकॉर्डिंग: एक फ़ाइल `J1.wav`। टोन: कहानी सुनाने वाला नैरेटर — शुरुआत में धीमा और रहस्य वाला, फिर हर word पर साफ़ और तेज़। **मोटे अक्षर** = ज़ोर। `...` = छोटा ठहराव।
-> पढ़ने का तरीका: `args[0]` = "args ज़ीरो", `args[1]` = "args वन"।
+> रिकॉर्डिंग: एक फ़ाइल `J1.wav`। टोन: कहानी सुनाने वाला narrator — शुरुआत थोड़ी धीमी, फिर हर step पर साफ़। **मोटे अक्षर** = ज़ोर। `...` = छोटा ठहराव।
+> पढ़ने का तरीका: `args[0]` = "args zero", `args[1]` = "args one"।
+> **Connection:** हर step का आख़िरी सवाल ही अगले word को लाता है (JVM का सफ़र: अंदर आई → call किया → कुछ return? → कौन सी method? → input?)।
 
-**कोल्ड ओपन**
-कॉलेज का पहला Java lab।
-टीचर बोर्ड पर एक line लिखते हैं — public static void main, String args।
-और साथ में बोलते हैं — "इसे अभी बस **रट लो**, बाद में समझ आ जाएगा।"
-सुनने में ये एक नॉर्मल सी line लगती है।
-लेकिन यहाँ एक चीज़ ऐसी है जो **नोटिस करने जैसी** है —
+**Cold open**
+College का पहला Java lab।
+Teacher board पर एक line लिखते हैं — public static void main, String args।
+और बोलते हैं — "इसे अभी बस **याद कर लो**, बाद में समझ आ जाएगा।"
+सुनने में ये एक normal सी line लगती है।
+लेकिन यहाँ एक चीज़ ऐसी है जो **notice करने जैसी** है —
 इस एक line के बिना, आपका Java program **start ही नहीं होता।**
-तो सवाल ये है — जो line इतनी ज़रूरी है, उसे हम सिर्फ़ **रटते क्यों** हैं?
-आज हम इस line को **word-by-word डिकोड** करेंगे। तो रील को एंड तक ज़रूर देखना।
+तो सवाल ये है — जो line इतनी important है, उसे हम **बिना समझे** याद क्यों करते हैं?
+आज हम इस line को **word by word decode** करेंगे — और आप देखेंगे कि हर word अगले word से जुड़ा है। तो reel को end तक ज़रूर देखना।
 
-**public**
-सच बताऊँ तो, इस line का हर word किसी **वजह** से वहाँ बैठा है। शुरू करते हैं public से।
-public का मतलब है — **सबके लिए खुला।**
-अब इसको समझिए। जब आप program चलाते हैं, तो उसे चलाने वाली JVM आपकी class के **बाहर** से आती है।
-अगर main public नहीं होगी, तो JVM उस तक पहुँच ही नहीं पाएगी।
-और इंटरेस्टिंग बात — अगर आपने main को **private** कर दिया, तो code compile तो हो जाएगा... पर program **चलेगा नहीं।**
+**Step 1 — public**
+इसे समझने का सबसे आसान तरीका है — **JVM की नज़र से देखना।** JVM ही आपका program चलाती है।
+जब Java program start होता है, JVM **बाहर से** आती है।
+अब बाहर वाला अंदर तभी आ सकता है, जब दरवाज़ा open हो।
+public का मतलब यही है — **सबके लिए open।**
+अगर main public नहीं हुई, तो JVM उसे access ही नहीं कर पाएगी।
+Interesting बात — main को **private** कर दो, तो code compile तो हो जाएगा... पर program **run नहीं होगा।**
 
-**static**
-अब आता है static। और यहाँ **एक सेकंड सोचिए।**
-Java में नॉर्मली पहले object बनता है, फिर उससे method call होती है।
-लेकिन program शुरू होने से पहले... कोई object होता **ही नहीं।**
-तो JVM, main को call कैसे करे?
-इसीलिए main static होती है — यानी **बिना object बनाए**, सीधे class के नाम से call। जैसे — Main डॉट main।
+**Step 2 — static**
+चलो, JVM अंदर आ गई। **पर अब एक नई problem है।**
+Java normally पहले object बनाती है, फिर उससे method call करती है।
+लेकिन program start होने से पहले... object होता **ही नहीं।**
+तो JVM, main को call कैसे करे? **एक second सोचिए...**
+Answer है — **static।** static का मतलब — object के बिना use कर सकते हो।
+यानी JVM सीधे class के नाम से call कर देती है — Main dot main।
 
-**void**
-अब void। void का मतलब है — **कुछ भी वापस नहीं** करना।
-JVM को main से कोई value नहीं चाहिए। उसे बस इतना चाहिए कि program चल जाए।
-फ़न फ़ैक्ट — C language में main एक number वापस करता है... पर Java में नहीं।
+**Step 3 — void**
+अब JVM ने main को call कर दिया। **तो क्या JVM को बदले में कुछ चाहिए?**
+नहीं। JVM को कोई value वापस नहीं चाहिए। उसे सिर्फ़ इतना चाहिए कि program start हो जाए।
+इसीलिए **void** — यानी कुछ return ही नहीं करना।
+Fun fact — C language में main एक number return करता है... पर Java में नहीं।
 
-**main**
-अब main। main एक **नाम** है, और Java ने rule बना दिया है — program **यहीं से** शुरू होगा।
-JVM ढूंढती ही सिर्फ़ main नाम की method को है। नाम बदला — तो program start ही नहीं होगा।
-और ध्यान रखिए — Java **capital और small** का फ़र्क मानती है। Main या MAIN लिखा, तो भी नहीं चलेगा।
-इसीलिए main को Java का **entry point** कहते हैं।
+**Step 4 — main**
+**पर रुकिए** — class के अंदर तो बहुत सारे methods होते हैं। JVM को कैसे पता कि call **किसे** करना है?
+यहीं आता है **main।** main एक नाम है, और Java ने rule बना दिया है — program **यहीं से** start होगा।
+JVM specifically main नाम की method को ही ढूंढती है। नाम change किया — तो program start ही नहीं होगा।
+और ध्यान रखिए — Java **capital और small letters** में फ़र्क करती है। Main या MAIN लिखा, तो भी नहीं चलेगा।
+इसीलिए main को Java का **fix entry point** कहते हैं।
 
-**String[] args**
-अब आख़िरी हिस्सा — String args।
-String[] मतलब String का array, यानी **text की एक list।** और args मतलब arguments।
-Program चलाते वक़्त आप बाहर से कुछ values भेज सकते हैं — वो सब args में आती हैं।
-और args सिर्फ़ एक नाम है — इसकी जगह आप कोई और नाम भी लिख सकते हैं।
+**Step 5 — String[] args**
+अब program start हो गया। **पर अगर आप start करते वक़्त program को कुछ बताना चाहें — तो?**
+उसके लिए है last part — **String args।**
+String[] का मतलब है String का array — यानी **text की list।** और args का मतलब है arguments।
+आप program run करते वक़्त बाहर से जो values भेजते हैं, वो args के through main method को मिलती हैं।
+और args सिर्फ़ एक नाम है — आप इसकी जगह कोई और नाम भी रख सकते हैं।
 
 **Example**
-अब इसे एक example से समझिए।
+अब एक example से समझिए।
 आपने लिखा — java Main Hello 10।
-तो Hello जाएगा args[0] में, और 10 जाएगा args[1] में — क्योंकि गिनती **0 से** शुरू होती है।
-पर **ध्यान से सोचिए** — ये 10 एक्चुअली number नहीं, **text** है।
-इसमें 5 जोड़ेंगे, तो 15 नहीं... **105** आएगा!
+तो Hello जाएगा args[0] में, और 10 जाएगा args[1] में — क्योंकि array की counting **0 से** start होती है।
+पर **ध्यान से सोचिए** — ये 10 actually number नहीं, **text** है।
+इसमें 5 add करेंगे, तो 15 नहीं... **105** आएगा!
 
-**सार**
-तो public static void main —
-एक्चुअली ये रटने वाली line नहीं, ये Java का **entry point** है — जहाँ से हर program शुरू होता है।
-अगर आपको भी कॉलेज में ये line बिना समझाए रटवाई गई थी, तो कमेंट में लिख दीजिए — **"रटा था"।**
+**पूरा chain**
+तो पूरा chain देखिए —
+**public** से JVM अंदर आई। **static** से बिना object के call किया। **void** — बदले में कुछ नहीं चाहिए। **main** — यहीं से start। और **String args** — बाहर से input।
+यही है public static void main — Java का **entry point**, जहाँ से program start होता है।
+अगर आपने भी college में ये line बिना समझे याद की थी, तो comment में लिखिए — **"मैंने भी"।**
 
-**Java 25 ट्विस्ट**
-लेकिन आप शायद सोचेंगे — सुना है Java 25 में तो छोटा सा void main() भी चल जाता है, तो पूरी line सीखने का फ़ायदा क्या?
-एक्चुअली ये टाइम वेस्ट नहीं, ये आपकी **नींव** है। क्योंकि college, interview और पुराने projects में आज भी ज़्यादातर यही पूरी line दिखती है।
+**Java 25 twist**
+लेकिन आप शायद सोचेंगे — Java 25 में तो छोटा सा void main() भी चल जाता है, तो पूरी line सीखने का फ़ायदा क्या?
+Actually ये time waste नहीं, ये आपका **base** है। क्योंकि college, interview और पुराने projects में आज भी ज़्यादातर यही पूरी line दिखती है।
 
-**एंडिंग**
-और मार्क माय वर्ड्स — एक बार ये वजहें समझ गए, तो ये line आपको **दोबारा कभी रटनी नहीं** पड़ेगी।
-व्हाट डू यू थिंक — छोटा void main() बेहतर है, या पुरानी पूरी line? बताइए कमेंट्स में।
-और ऐसी ही कोडिंग की डीप डाइव्स के लिए **follow** कर लीजिए।
+**Ending**
+और mark my words — एक बार ये chain समझ गए, तो ये line आपको याद **करनी नहीं पड़ेगी — खुद याद रहेगी।**
+What do you think — छोटा void main() better है, या पूरी line? Comment में बताइए।
+और अगर concept clear हो गया हो, तो **follow** कर लेना।
 
 ---
 
@@ -81,14 +88,14 @@ Program चलाते वक़्त आप बाहर से कुछ val
 
 | हिस्सा | बीच में | मतलब वाला कार्ड | एक्स्ट्रा बात वाला कार्ड |
 |---|---|---|---|
-| कोल्ड ओपन | चॉकबोर्ड जैसा फ़्रेम, line हाथ से लिखी जाती है; "रट लो" पर लाल अंडरलाइन | "नॉर्मल सी line?" → "इसके बिना program start नहीं" | "रटते क्यों हैं? 🤔" → "आज डिकोड करेंगे" |
-| public | `public` | "सबके लिए **खुला** · JVM बाहर से आती है" | `private static void main` → "compile ✓ · run ✗" |
+| कोल्ड ओपन | चॉकबोर्ड जैसा फ़्रेम, line हाथ से लिखी जाती है; "याद कर लो" पर लाल अंडरलाइन | "नॉर्मल सी line?" → "इसके बिना program start नहीं" | "बिना समझे याद? 🤔" → "आज डिकोड करेंगे" |
+| public | `public` | "सबके लिए **open** · JVM बाहर से आती है" | `private static void main` → "compile ✓ · run ✗" |
 | static | `static` | "**बिना object** के call" | `Main.main()` (class नाम + डॉट + method) |
-| void | `void` | "**कुछ वापस नहीं**" | "फ़न फ़ैक्ट · C: `int main()` · Java: `void main`" |
-| main | `main` | "program **यहीं से** शुरू" | `Main` / `MAIN` पर लाल ✗ → "**entry point**" |
+| void | `void` | "कुछ **return** नहीं" | "फ़न फ़ैक्ट · C: `int main()` · Java: `void main`" |
+| main | `main` | "program **यहीं से** start" | `Main` / `MAIN` पर लाल ✗ → "**entry point**" |
 | String[] args | `String[] args` | "**text की list** · बाहर से input" | `String[] args` → `String[] a` ✓ |
 | Example | VS Code जैसा dark editor: code **type** होता है | टर्मिनल: `java Main Hello 10` → `Hello` / `10`; `args[0]`, `args[1]` के डिब्बे | `args[1] + 5` → `105` (लाल घेरा), नीचे छोटा: `Integer.parseInt` → `15` |
-| सार | पूरी line → तीर → gold "**Entry point**" | "रटा था?" कमेंट कार्ड | — |
+| पूरा chain | पाँचों words एक-एक कर जलते हैं, बीच में तीर: JVM अंदर → call → return? → main → input; फिर gold "**Entry point**" | "मैंने भी" कमेंट कार्ड | — |
 | Java 25 | `void main()` + टैग "Java 25+" | "college / interview → पूरी line" | — |
 | एंडिंग | `void main()` vs पूरी line — दोनों आमने-सामने, बीच में "?" | "FOLLOW करो" + handle | — |
 
@@ -111,11 +118,11 @@ argument: 10
 ---
 
 ## टाइटल और कवर
-- **टाइटल (कोई एक):** (1) `public static void main` — रटो मत, डिकोड करो (2) कॉलेज में ये line रटवाई गई थी? आज समझो (3) `"10" + 5` = 105? Java की सबसे फ़ेमस line डिकोड
-- **कवर:** काले बैकग्राउंड पर `public static void main(String[] args)`, नीचे gold में "रटा था?"
+- **टाइटल (कोई एक):** (1) `public static void main` — word by word decode (2) College में ये line बिना समझे याद की थी? आज समझो (3) `"10" + 5` = 105? Java की सबसे फ़ेमस line डिकोड
+- **कवर:** काले बैकग्राउंड पर `public static void main(String[] args)`, नीचे gold में "बिना समझे याद की थी?"
 
 ## कैप्शन
-> कॉलेज में ये line बिना समझाए रटवाई गई थी? 😅 आज `public static void main(String[] args)` का हर word डिकोड ✍️
+> College में ये line बिना समझे याद की थी? 😅 आज `public static void main(String[] args)` का हर word डिकोड ✍️
 > और `"10" + 5` = 105 क्यों? 😮 Java 25 से `void main()` भी चलता है!
 > कमेंट में बताइए — छोटा `void main()` या पूरी line? 👇
 > #Java #JavaInHindi #CodingHindi #Programming #JavaBasics #LearnJava
