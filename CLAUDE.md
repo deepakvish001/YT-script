@@ -63,6 +63,7 @@ Har bade number ko kisi jaani-pehchaani cheez se compare karo.
 - Fast-moving facts par date lagao ("Oct 2026 tak"). Latest model/tool ke naam har baar web se verify karo.
 - Format: 9:16, 30–60 sec. Visual mix: 2D line-art (`animation/scenes/explainer-khaad.html` style) + 3D data/globe + 0–2 AI clips per reel (Higgsfield ~7.5 credits/clip). Asli logon ke realistic chehre / deepfake kabhi nahi.
 - Reel ideas aur series plan: `ai-channel/REEL-IDEAS.md`.
+- Code/tech reels ka visual style (black bg, gold keyword + teer + short explanation, typed code demo): `ai-channel/STYLE-code-reels.md`.
 - **Map rule:** India ka koi bhi outline/border sirf official (Survey of India) boundary ke saath. `world-atlas`/Natural Earth de facto boundaries dikhata hai (PoK, Gilgit-Baltistan, Aksai Chin bahar) — isse sirf coastlines banao, political borders ya India highlight kabhi nahi.
 
 ## Workflow
