@@ -1,15 +1,15 @@
-# P12 · Sample pass, hidden fail
-**Series:** प्लेसमेंट का सच · **लंबाई:** करीब 74 सेकंड · **Keyword:** OA · **एक सीख:** हर OA के नियम अलग होते हैं; code लिखने से पहले constraints से complexity तय करो, edge cases लिखो और overflow देखो।
+# P12 · एक हफ्ता, दो OA, दो नतीजे
+**Series:** प्लेसमेंट का सच · **लंबाई:** करीब 76 सेकंड · **Keyword:** OA · **एक सीख:** हर OA के नियम अलग होते हैं, और samples सिर्फ तुम्हें सही साबित करते हैं; अपना code खुद तोड़ो: constraints, edge cases, overflow।
 
 ## 🎙️ वॉइसओवर
-पिछले OA में brute force pass हुआ था, तो आज भी वही लगाया, samples green हुए, और submit करते ही hidden tests लाल हो गए। Sample pass होना bathroom में गाकर खुद को singer समझने जैसा है, असली test तो stage पर होता है। गलती मेहनत की नहीं, अंदाज़े की थी, क्योंकि हर OA अलग होता है। कई service based tests में aptitude, basics और सही output पर focus होता है, जबकि ज़्यादातर product based OAs में constraints बड़े होते हैं और hidden tests speed और edge cases पकड़ते हैं। दोनों ठीक हैं, नियम अलग हैं। पुराने तरीके पर अटकना Einstellung effect है, यानी जो तरीका पहले चला, दिमाग बार बार उसी पर जाता है। हिसाब देखो, n एक लाख है तो O(n²) करीब हज़ार करोड़ operations है, और rule of thumb से judge एक second में करीब दस करोड़ करता है, यानी करीब सौ seconds, जबकि limit अक्सर एक दो seconds होती है। इसलिए CEO check लगाओ। C यानी constraints, n देखकर complexity तय करो। E यानी edge cases, code से पहले empty input, एक element और duplicates लिख लो। O यानी overflow, बड़े sums के लिए long long या long लो। Comment में OA लिखो, मैं तुम्हें पूरी checklist DM कर दूँगा, और follow कर लो।
+एक हफ्ते में दो OA दिए, पहले में पूरे marks आए, और दूसरे में वही brute force लगाया तो hidden tests में TLE की line लग गई। Sample pass होना bathroom में गाकर खुद को singer समझने जैसा है, असली test तो stage पर होता है। गलती मेहनत की नहीं, अंदाज़े की थी, क्योंकि हर OA अलग होता है। कई service based tests में aptitude, basics और सही output देखा जाता है, जबकि ज़्यादातर product OAs में constraints बड़े होते हैं और hidden tests speed और edge cases पकड़ते हैं। दोनों ठीक हैं, नियम अलग हैं। हम सिर्फ samples पर भरोसा confirmation bias की वजह से करते हैं, यानी दिमाग वही examples ढूंढता है जो उसे सही साबित करें। Wason के 2, 4, 6 वाले experiment में सिर्फ fit होने वाले examples आज़माने वाले अक्सर गलत rule पर पक्के हो गए। और speed भी देखो, n एक लाख हो तो O(n²) करीब हज़ार करोड़ steps है, जो एक दो second में नहीं चलेगा। इसलिए CEO check लगाओ। C यानी constraints, n देखकर complexity तय करो। E यानी edge cases, empty input, एक element और duplicates खुद डालकर चलाओ। O यानी overflow, बड़े sums पर long long या long लो। Comment में OA लिखो, मैं तुम्हें पूरी checklist DM कर दूँगा, और follow कर लो।
 
 ## 🎬 स्क्रीन + मीम
-- **Hook:** editor में test panel: "Sample 1 ✅ Sample 2 ✅" → Submit बटन दबता है → नीचे लाल लाइनें "Hidden 4 ❌ TLE · Hidden 7 ❌ Wrong Answer"; stick figure का मुँह 😶।
+- **Hook (calendar split):** एक हफ्ते का calendar; सोमवार पर "OA #1 · Full marks 🎉", शुक्रवार पर "OA #2" और नीचे लाल लाइनों की कतार "TLE ❌ · Wrong Answer ❌ · TLE ❌"; stick figure का मुँह 😶।
 - **Bathroom singer कार्ड:** बाएँ stick figure shower में माइक की तरह शैम्पू की बोतल, caption "Sample tests 🎤"; दाएँ वही stick figure stage पर, सामने भीड़ के 👀, caption "Hidden tests"।
 - **दो अलग नियम (respectful split):** बाएँ कार्ड "कई service-based tests: aptitude · reasoning · basics · सही output"; दाएँ कार्ड "ज़्यादातर product OAs: बड़े constraints · hidden tests · speed + edge cases"; बीच में ⚖️ "दोनों ठीक, नियम अलग"। कोई company का नाम या logo नहीं।
-- **Psychology कार्ड:** gold में `Einstellung effect`, तीर, नीचे: "जो तरीका पहले चला, दिमाग वहीं भागता है"; छोटा icon 🔁।
-- **हिसाब कार्ड:** `n = 1,00,000` → `O(n²) ≈ 10¹⁰` (हज़ार करोड़) → `÷ ~10⁸ /sec` → `≈ 100 sec` लाल, बगल में `limit: 1–2 sec` हरा; कोने में छोटा टैग "rule of thumb"।
+- **Psychology कार्ड:** gold में `confirmation bias`, तीर, नीचे: "दिमाग वही examples ढूंढता है जो उसे सही साबित करें"; फिर छोटा कार्ड `2, 4, 6 → ?` और stick figure सिर्फ `8, 10, 12 ✅` `20, 22, 24 ✅` आज़माता है, कोने में "तोड़ने वाला example? 🤷"।
+- **हिसाब कार्ड (छोटा):** `n = 1,00,000` → `O(n²) ≈ 10¹⁰` (हज़ार करोड़ steps) लाल, बगल में `limit: 1–2 sec` हरा। (पूरी constraint table P03 में है, यहाँ सिर्फ एक झलक।)
 - **CEO check + CTA:** gold में तीन अक्षर `C · E · O` एक-एक कर जलते हैं: "Constraints → complexity", "Edge cases पहले", "Overflow → long long / long"; फिर chat bubble "OA" + follow button।
 
 ## 📄 Cheat sheet (comment → DM)
@@ -20,7 +20,7 @@
 - **Fast input:** C++ में `ios::sync_with_stdio(false); cin.tie(nullptr);` · Java में बड़े input के लिए `Scanner` की जगह `BufferedReader` · Python में `sys.stdin.readline`।
 - **Recursion depth:** Python की default recursion limit 1000 है, तो बहुत गहरा DFS crash कर सकता है। Iterative (stack वाला) version बेहतर।
 - **Output format exact रखो:** extra space, newline, "YES" vs "Yes", decimal places। Format गलत तो सही answer भी Wrong Answer।
-- **Submit से पहले 30 second:** सबसे बड़े n पर मन में complexity गिनो, और अपने लिखे edge cases पर एक बार run करो।
+- **Confirmation bias तोड़ो:** submit से पहले खुद से पूछो "कौनसा input मेरा code तोड़ सकता है?" और कम से कम 3 ऐसे inputs custom test में चलाओ; सबसे बड़े n पर मन में complexity गिनो।
 - **Partial marks:** कई platforms पर हर test case के अलग marks मिलते हैं, तो time खत्म हो रहा हो तो चलने वाला brute force submit करना खाली छोड़ने से बेहतर।
 - **Test का pattern पहले से पता करो:** company के official page या placement cell से sections, time और language options देखो। जैसे TCS NQT में Foundation (numerical, verbal, reasoning) और Advanced (advanced quant/reasoning + coding) sections होते हैं, और Advanced वाला हिस्सा Digital/Prime जैसे higher roles के लिए मायने रखता है।
 
@@ -28,12 +28,15 @@
 - **किसी company का मज़ाक नहीं, और "service वाले tests आसान होते हैं" भी नहीं।** कई service companies के higher-track tests (जैसे TCS NQT का Advanced coding section) काफी tough होते हैं। VO में "कई" और "ज़्यादातर" जानबूझकर है।
 - **"Service tests में hidden test cases नहीं होते" मत बोलो**; वहाँ भी होते हैं। फर्क constraints और focus का है।
 - "90% students ऐसा करते हैं" जैसा कोई stat नहीं डाला।
-- 10⁸ operations/sec **rule of thumb** है, law नहीं: language (Python धीमा), judge machine और operations के type पर depend करता है। VO में "rule of thumb" और "करीब" दोनों बोले गए हैं।
-- Math check: 10⁵ का square = 10¹⁰ = हज़ार करोड़; 10⁸ = दस करोड़; 10¹⁰ / 10⁸ = 100 seconds।
+- 10⁸ operations/sec (cheat sheet में) **rule of thumb** है, law नहीं: language (Python धीमा), judge machine और operations के type पर depend करता है। VO में सिर्फ "करीब हज़ार करोड़ steps" और "एक दो second में नहीं चलेगा" है।
+- Math check: 10⁵ का square = 10¹⁰ = हज़ार करोड़ (1 करोड़ = 10⁷)। 10⁸/sec के हिसाब से ~100 seconds।
+- **Wason experiment सही बोलना:** जिन्होंने सिर्फ fit होने वाले (confirming) examples आज़माए, वो अक्सर गलत rule पर पहुँचे। बाद में Klayman & Ha (1987) ने इसे "positive test strategy" कहा, यानी ये हमेशा bias नहीं, पर जब असली rule तुम्हारे अंदाज़े से बड़ा हो (जैसे hidden tests) तब यही तरीका गलती छुपा देता है। "लोग बेवकूफ़ थे" जैसा मत बोलो।
+- Series में दोहराव से बचने के लिए Einstellung effect (P20, P28 में है) और पूरी constraint table (P03 में है) यहाँ जानबूझकर नहीं ली।
 - Framework का नाम अपना: **CEO check** (Constraints, Edge cases, Overflow)।
 - DM का वादा तभी जब Instagram comment-keyword automation (जैसे ManyChat) चालू हो, वरना manually भेजो।
 - **सोर्स:**
-  - Einstellung effect: Abraham S. Luchins (1942), "Mechanization in problem solving: The effect of Einstellung", *Psychological Monographs* 54(6), No. 248। (Water jar experiment: पुराना लंबा formula सीखने वाले लोगों ने आसान solution मिस कर दिया।)
+  - Confirmation / 2-4-6 task: P. C. Wason (1960), "On the failure to eliminate hypotheses in a conceptual task", *Quarterly Journal of Experimental Psychology* 12(3), 129–140. doi:10.1080/17470216008416717
+  - Reinterpretation: Klayman & Ha (1987), "Confirmation, disconfirmation, and information in hypothesis testing", *Psychological Review* 94(2), 211–228.
   - ~10⁸ operations/second: USACO Guide, "Time Complexity" (https://usaco.guide/bronze/time-comp)।
   - Input size → complexity table: Antti Laaksonen, *Competitive Programmer's Handbook*, Chapter 2 "Time complexity", "Estimating efficiency" (1 second limit मानकर)। O(2ⁿ) वाली row पर editions में n ≤ 20 / n ≤ 25 का फर्क है, इसलिए cheat sheet में conservative 20।
   - Python default recursion limit 1000: Python docs, `sys.getrecursionlimit()` / `sys.setrecursionlimit()`।
