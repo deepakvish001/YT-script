@@ -17,7 +17,7 @@ Roommate और तुमने same sheet के same questions किए, फ�
 - **Contest से पहले (5 मिनट):** language और editor तय, अपना template तैयार (fast I/O, common imports), पानी और rough पेज पास में। Platform के rules एक बार पढ़ लो (जैसे पहले से लिखा template allowed है या नहीं)।
 - **पहले 2–3 मिनट:** सारे problems के title और constraints पर एक नज़र। Codeforces/LeetCode में आम तौर पर आसान पहले आता है, पर OA (online assessment) में ये ज़रूरी नहीं, इसलिए पहले सबसे आसान दिखने वाला पकड़ो।
 - **स्टेशन 1 · समझना:** input, output, constraints अलग से लिखो; sample को हाथ से चलाओ। Constraints से अंदाज़ा: n ≤ 10^5 → O(n log n) या O(n) चाहिए।
-- **स्टेशन 2 · Logic:** पहले brute force बोलो/लिखो, फिर देखो constraints में चलेगा या नहीं; नहीं चलेगा तो क्या दोहराया जा रहा है (sorting, prefix sum, hash map, binary search)।
+- **स्टेशन 2 · Logic:** पहले brute force सोचो, फिर देखो constraints में चलेगा या नहीं। नहीं चलेगा तो देखो कौनसा काम बार बार दोहराया जा रहा है, और उसे sorting, prefix sum, hash map या binary search से छोटा करो।
 - **स्टेशन 3 · Dry run:** sample + कम से कम एक edge case (n = 1, सब same, सब negative, सबसे बड़ा value → overflow? `long long`/`long`)।
 - **स्टेशन 4 · Typing:** code लिखते वक़्त logic दोबारा मत सोचो; दिक्कत हो तो समझो स्टेशन 2 अधूरा था।
 - **दो चांस rule:** एक पूरा focused try समझने पर, एक logic पर। दोनों में बात न बने तो उस problem पर एक line का note लिखो ("कहाँ अटका") और अगले पर जाओ; बचे time में लौटो।
@@ -27,7 +27,7 @@ Roommate और तुमने same sheet के same questions किए, फ�
 
 ## ✅ ध्यान रखो / सोर्स
 - "Skip करना हमेशा सही है" मत बोलो; दो चांस rule practice का rule of thumb है। कभी-कभी आख़िरी 10 मिनट में एक ही problem पर टिके रहना ठीक होता है।
-- Incubation effect को जादू मत बताना: research में औसतन फ़ायदा दिखता है, पर हर problem पर नहीं; और ये तभी काम करता है जब पहले ठीक से कोशिश की हो।
+- Incubation effect को जादू मत बताना: research में औसतन फ़ायदा दिखता है, पर हर problem पर नहीं; और पहले ठीक से कोशिश की हो तो effect बड़ा दिखता है (Sio & Ormerod: लंबी preparation के बाद incubation का फ़ायदा ज़्यादा)।
 - "Codeforces में problems हमेशा difficulty order में होते हैं" मत बोलो; "आम तौर पर" बोलो। LeetCode contest penalty का exact मिनट वाला नंबर VO में मत डालो (rules बदलते रहते हैं)।
 - Roommate वाला मज़ाक हल्का रखो, किसी का नाम/college नहीं।
 - **चार स्टेशन** और **दो चांस rule** हमारे अपने नाम हैं (दूसरे creator का framework नाम नहीं)।

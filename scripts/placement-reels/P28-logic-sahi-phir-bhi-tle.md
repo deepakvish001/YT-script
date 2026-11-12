@@ -1,8 +1,8 @@
 # P28 · Logic सही, फिर भी TLE?
-**Series:** प्लेसमेंट का सच · **लंबाई:** करीब NN सेकंड · **Keyword:** TLE · **एक सीख:** Logic सही होने पर भी TLE आए तो तीन चीज़ें देखो: गलत data structure, अनजाने में बनी copy, और constraints के हिसाब से धीमा algorithm।
+**Series:** प्लेसमेंट का सच · **लंबाई:** करीब 74 सेकंड · **Keyword:** TLE · **एक सीख:** Logic सही होने पर भी TLE आए तो तीन चीज़ें देखो: गलत data structure, अनजाने में बनी copy, और constraints के हिसाब से धीमा algorithm।
 
 ## 🎙️ वॉइसओवर
-Sample पास, logic सही, फिर भी submit पर लाल TLE, यानी time limit पार। Answer सही था, बस वो उस दोस्त जैसा निकला जो पाँच मिनट बोलकर घंटे भर बाद आता है। तीन वजहें होती हैं। पहली वजह गलत data structure है, जैसे loop में list पर contains हर बार पूरी list घूमता है, जबकि hash set में ये average O(1) है। n एक लाख हो तो ये करीब 10 की power 10 operations बनते हैं, यानी 1 second की limit में करीब सौ गुना देर। बार बार minimum चाहिए तो भी list नहीं, priority queue लो। ये आदत की गलती है, इसे Einstellung effect कहते हैं, यानी पुराना तरीका इतना पक्का कि बेहतर रास्ता दिखता ही नहीं। दूसरी वजह है अनजाने में बनी copy। C++ में recursion में vector by value भेजा तो हर call पर copy बनती है, const reference से भेजो। Java में array भेजने पर copy नहीं बनती, पर loop में String को plus से जोड़ना हर बार नई string बनाता है, StringBuilder लो। Python में slicing भी नई list बनाती है। तीसरी वजह है धीमा algorithm, तब constraints देखो और approach बदलो। Comment में TLE लिखो, मैं तुम्हें TLE checklist DM कर दूँगा, और ऐसे ही placement के सच के लिए follow कर लो।
+Sample पास, logic सही, फिर भी submit पर TLE आ गया, यानी time limit पार। Answer सही था, बस वो उस दोस्त जैसा निकला जो पाँच मिनट बोलकर घंटे भर बाद आता है। तीन वजहें होती हैं। पहली वजह गलत data structure है, जैसे loop में list पर contains हर बार पूरी list घूमता है, जबकि hash set में ये average O(1) है। n एक लाख हो तो करीब 10 की power 10 operations बनते हैं, यानी 1 second की limit में करीब सौ गुना देर। और बार बार minimum चाहिए, तो list नहीं, priority queue लो। ये आदत की गलती है, इसे Einstellung effect कहते हैं, यानी पुराना तरीका इतना पक्का कि बेहतर रास्ता दिखता ही नहीं। दूसरी वजह है अनजाने में बनी copy। C++ में recursion में vector by value भेजा तो हर call पर copy बनती है, const reference से भेजो। Java में array भेजने पर copy नहीं बनती, पर loop में String को plus से जोड़ना हर बार नई string बनाता है, StringBuilder लो। Python में slicing भी नई list बनाती है। तीसरी वजह है धीमा algorithm, तब constraints देखो और approach बदलो। Comment में TLE लिखो, मैं तुम्हें TLE checklist DM कर दूँगा, और ऐसे ही placement के सच के लिए follow कर लो।
 
 ## 🎬 स्क्रीन + मीम
 - **Hook:** हरे ✓ `Sample 1 · Sample 2`, फिर Submit बटन दबते ही बड़ा लाल stamp **TLE ⏱️**। नीचे chat bubble: दोस्त "बस 5 min में आया 🏃" → घड़ी तेज़ घूमकर 1 घंटा आगे।
@@ -26,7 +26,7 @@ Sample पास, logic सही, फिर भी submit पर लाल TLE,
   - Java: array/object method में भेजने पर copy नहीं बनती (reference की value जाती है), पर loop में `String +=` हर बार नई String → `StringBuilder`।
   - Python: `a[1:]` जैसी slicing नई list बनाती है → index भेजो। Strings को loop में जोड़ने के बजाय `''.join(list)`।
 - **6 · Recursion / DP:** एक ही state बार बार calculate हो रहा है? Memoization लगाओ।
-- **7 · Infinite loop तो नहीं?** While loop में pointer/हद हर बार बदल रही है? (binary search में `lo = mid` वाला loop अटक सकता है)।
+- **7 · Infinite loop तो नहीं?** While loop में pointer/हद हर बार बदल रही है? (जैसे `while (lo < hi)` में `mid = (lo + hi) / 2` और `lo = mid` हो, तो दो elements बचने पर loop अटक जाता है; वहाँ `mid = (lo + hi + 1) / 2` लो)।
 - **8 · Fast I/O:**
   - C++: `ios::sync_with_stdio(false); cin.tie(nullptr);` और `endl` की जगह `'\n'` (`endl` हर बार flush करता है)। इसके बाद `printf/scanf` को `cin/cout` के साथ मत मिलाओ।
   - Java: `Scanner` की जगह `BufferedReader` + `StringTokenizer`, output के लिए `StringBuilder`/`PrintWriter`।
